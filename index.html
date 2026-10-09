@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eaudom Wholesale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111111; --gold:#b8962e; --gold-light:#d4af37; --muted:#555555; --rule:#c9b46a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#e9e6df;color:var(--ink);font-family:"EB Garamond",Garamond,Georgia,serif}
+  .page{
+    width:816px;height:1056px;background:#ffffff;margin:24px auto;padding:52px 60px 44px;
+    position:relative;overflow:hidden;display:flex;flex-direction:column;
+    box-shadow:0 2px 14px rgba(0,0,0,.12);
+  }
+  @page{size:8.5in 11in;margin:0}
+  @media print{
+    html,body{background:#fff}
+    .page{margin:0;box-shadow:none;page-break-after:always}
+    .page:last-child{page-break-after:auto}
+  }
+  .cinzel{font-family:Cinzel,"EB Garamond",serif}
+  .masthead{text-align:center}
+  .masthead img{width:150px;height:auto;display:block;margin:0 auto 2px}
+  .masthead .house{font-family:Cinzel,serif;font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:var(--muted);margin:0}
+  .masthead .line{font-family:Cinzel,serif;font-size:19px;letter-spacing:.14em;color:var(--ink);margin:6px 0 0}
+  .masthead .sub{font-size:14.5px;font-style:italic;color:var(--muted);margin:5px 0 0}
+  .rule{display:flex;align-items:center;gap:10px;margin:14px 0 10px}
+  .rule::before,.rule::after{content:"";flex:1;height:1px;background:var(--rule)}
+  .rule span{font-family:Cinzel,serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+  .fleur{color:var(--gold);font-size:14px;line-height:1}
+  .intro{font-size:14px;line-height:1.42;text-align:center;color:#333;margin:0 24px 10px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;column-gap:34px;row-gap:14px}
+  .scent h3{font-family:Cinzel,serif;font-weight:500;font-size:17px;letter-spacing:.08em;margin:0;line-height:1.15}
+  .scent .arch{font-family:Cinzel,serif;font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:3px 0 4px}
+  .scent .tag{font-style:italic;font-size:13.5px;color:#333;margin:0 0 4px}
+  .scent p.desc{font-size:12.6px;line-height:1.36;margin:0 0 5px;color:#222}
+  .scent .notes{font-size:11.3px;line-height:1.38;color:#444;margin:0}
+  .scent .notes b{font-family:Cinzel,serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);margin-right:4px}
+  .people{display:grid;grid-template-columns:1fr 1fr;column-gap:34px;align-items:start}
+  .footer{margin-top:auto;border-top:1px solid var(--rule);padding-top:9px;text-align:center;font-size:11.8px;color:#333;line-height:1.5}
+  .footer b{font-family:Cinzel,serif;font-weight:500;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink)}
+  /* price sheet */
+  table{width:100%;border-collapse:collapse;margin:4px 0 2px;font-size:12.5px;table-layout:fixed}
+  col.c1{width:22%}col.c2{width:25%}col.c3{width:17%}col.c4{width:12%}col.c5{width:12%}col.c6{width:12%}
+  th{font-family:Cinzel,serif;font-weight:500;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);text-align:left;padding:7px 8px;border-bottom:1.5px solid var(--ink)}
+  th.n,td.n{text-align:right;white-space:nowrap}
+  td{padding:5px 8px;white-space:nowrap;border-bottom:1px solid #e3dcc6;vertical-align:top}
+  td.name{font-family:Cinzel,serif;font-weight:500;font-size:12.5px;letter-spacing:.03em}
+  td.col{font-size:12px;color:#555}
+  tr.section td{font-family:Cinzel,serif;font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);border-bottom:none;padding:10px 8px 2px}
+  .note{font-size:12.2px;font-style:italic;color:#444;margin:2px 0 0;text-align:center}
+  .terms{display:grid;grid-template-columns:1fr 1fr;column-gap:34px;row-gap:7px;margin-top:2px}
+  .terms div{font-size:11.8px;line-height:1.36;color:#222}
+  .terms b{font-family:Cinzel,serif;font-weight:500;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);display:block;margin-bottom:1px}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: SELL SHEET -->
+<section class="page" data-document-role="page" data-label="Eaudom Launch Collection">
+  <header class="masthead">
+    <img src="logo.svg" alt="Eaudom crest">
+    <p class="house">Niche fragrance house · Charlotte, North Carolina</p>
+    <p class="line">Experience history through scent.</p>
+    <p class="sub">Launch collection, December 2026. Five fragrances, 50 ml, blended and bottled in North Carolina, USA.</p>
+  </header>
+
+  <div class="rule"><span>The Immortal Collection</span></div>
+  <p class="intro">Limited editions of 250 numbered bottles per fragrance. One run, then retired. Each scent is not a portrait of a person but a snapshot of their time and place, the air they moved through, distilled.</p>
+
+  <div class="grid">
+    <div class="scent">
+      <h3>Churchill</h3>
+      <p class="arch">Leaders 001 · Eau de Parfum</p>
+      <p class="tag">Never surrender the room.</p>
+      <p class="desc">Dry wit, cigars, cognac and sheer resolve. Bright citrus and cracked black pepper over old library air, settling into oak shelves and a first hint of leather, closing on cigar leaf, smoky cypriol, cedar and amber.</p>
+      <p class="notes"><b>Top</b>bright citrus, black pepper, clove<br><b>Heart</b>library shelves, oak barrel, leather<br><b>Base</b>cedar, amber, cigar leaf, rum, cognac, tonka</p>
+    </div>
+    <div class="scent">
+      <h3>Jesse James</h3>
+      <p class="arch">Rogues 001 · Extrait de Parfum</p>
+      <p class="tag">Ride fast, leave no trace.</p>
+      <p class="desc">A dangerous sweetness kept carefully low. A flash of orange peel, then saddle leather, cured tobacco and oak barrel, closing on dry cedar, trail dust, distant campfire smoke and a quiet animalic warmth.</p>
+      <p class="notes"><b>Top</b>orange peel<br><b>Heart</b>saddle leather, cured tobacco, oak barrel, tobacco-opium<br><b>Base</b>dry cedar, trail dust, campfire smoke, animalic musk</p>
+    </div>
+    <div class="scent">
+      <h3>Hypatia</h3>
+      <p class="arch">Luminaries 001 · Eau de Parfum</p>
+      <p class="tag">Clarity, even in the dark.</p>
+      <p class="desc">Luminous composure under pressure. A metallic rose flash and bergamot air, then coriander, osmanthus and apricot over cool marble and parchment, closing on pale olive wood, cedar, myrrh and smoky styrax.</p>
+      <p class="notes"><b>Top</b>metallic rose, bergamot<br><b>Heart</b>coriander, osmanthus, apricot, marble, temple resin<br><b>Base</b>olive wood, cedar, myrrh, styrax, warm musk</p>
+    </div>
+    <div class="scent">
+      <h3>Musashi</h3>
+      <p class="arch">Unbound 001 · Extrait de Parfum</p>
+      <p class="tag">Undefeated, then at peace.</p>
+      <p class="desc">Swordsman, philosopher, ink painter. The cold flash of a blade and thin mountain air, then ink stone and kodo incense over agarwood, settling into cave stone, hinoki and moss, warmed by a low vanilla-amber resolve.</p>
+      <p class="notes"><b>Top</b>blade-cold green, mountain air<br><b>Heart</b>ink stone, kodo incense, agarwood, temple resin<br><b>Base</b>cave stone, hinoki, moss, vanilla-amber</p>
+    </div>
+  </div>
+
+  <div class="rule"><span>The Spirit Collection</span></div>
+  <div class="people">
+    <div class="scent">
+      <h3>Spirit of The People</h3>
+      <p class="arch">Extrait de Parfum · Ongoing release</p>
+      <p class="tag">As Russian as possible.</p>
+      <p class="notes"><b>Top</b>coriander, black pepper, petitgrain<br><b>Heart</b>oud, church incense, violet leaf, ginger, clove<br><b>Base</b>Russian leather, cured tobacco, black tea, cedar, oakmoss</p>
+    </div>
+    <div class="scent">
+      <p class="desc" style="margin-top:4px">Rye bread and pepper vodka on the table, a samovar of black tea, incense from the church down the street, an officer's leather satchel by the door. Opens dry and spiced, deepens into resinous smoke and cold violet leaf, settles into Russian leather, cured tobacco and black tea over mossy cedar.</p>
+      <p class="desc" style="color:#555">Not limited, not numbered. The Spirit Collection is the house's standing line.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <b>Wholesale and decant inquiries</b><br>
+    Sam, Creative Director · support@eaudom.com · eaudom.com<br>
+    Discovery set (4 x 2 ml, one per Immortal) available. All fragrances ship ground within the lower 48 states.
+  </footer>
+</section>
+
+<!-- PAGE 2: WHOLESALE PRICE SHEET -->
+<section class="page" data-document-role="page" data-label="Eaudom Wholesale Price Sheet">
+  <header class="masthead">
+    <img src="logo.svg" alt="Eaudom crest" style="width:104px">
+    <p class="line" style="font-size:17px">Wholesale Price Sheet</p>
+    <p class="sub">Launch collection, December 2026. Prices in US dollars. Effective October 2026.</p>
+  </header>
+
+  <div class="rule"><span>Pricing</span></div>
+  <table>
+    <colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"><col class="c6"></colgroup>
+    <thead>
+      <tr>
+        <th>Fragrance</th><th>Collection</th><th>Concentration</th>
+        <th class="n">Retail<br><span style="letter-spacing:.05em;text-transform:none;font-family:'EB Garamond',serif;font-size:11px;color:#555">MAP</span></th><th class="n">6 to 11<br><span style="letter-spacing:.05em;text-transform:none;font-family:'EB Garamond',serif;font-size:11px;color:#555">40% off</span></th><th class="n">12 and up<br><span style="letter-spacing:.05em;text-transform:none;font-family:'EB Garamond',serif;font-size:11px;color:#555">50% off</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="section"><td colspan="6">50 ml bottles</td></tr>
+      <tr><td class="name">Churchill</td><td class="col">Immortal · Leaders 001</td><td>Eau de Parfum</td><td class="n">$180</td><td class="n">$108</td><td class="n">$90</td></tr>
+      <tr><td class="name">Hypatia</td><td class="col">Immortal · Luminaries 001</td><td>Eau de Parfum</td><td class="n">$180</td><td class="n">$108</td><td class="n">$90</td></tr>
+      <tr><td class="name">Jesse James</td><td class="col">Immortal · Rogues 001</td><td>Extrait de Parfum</td><td class="n">$200</td><td class="n">$120</td><td class="n">$100</td></tr>
+      <tr><td class="name">Musashi</td><td class="col">Immortal · Unbound 001</td><td>Extrait de Parfum</td><td class="n">$200</td><td class="n">$120</td><td class="n">$100</td></tr>
+      <tr><td class="name">Spirit of The People</td><td class="col">Spirit Collection</td><td>Extrait de Parfum</td><td class="n">$200</td><td class="n">$120</td><td class="n">$100</td></tr>
+      <tr class="section"><td colspan="6">Discovery</td></tr>
+      <tr><td class="name">Discovery Set</td><td class="col">4 x 2 ml, one per Immortal</td><td>As bottled</td><td class="n">$40</td><td class="n">$24</td><td class="n">$20</td></tr>
+      <tr><td class="name">People Card</td><td class="col">1 x 2 ml, printed card</td><td>Extrait de Parfum</td><td class="n">$10</td><td class="n" colspan="2" style="font-size:11.5px;color:#555">Free with every People bottle</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Quantity tiers count across all items combined. A mixed order of 12 units, bottles and discovery sets together, qualifies for the 12 and up price. Discovery set: 4 x 2 ml, one vial per Immortal. People card: 1 x 2 ml. Retail buyers who purchase a discovery set receive its price as credit toward a full bottle.</p>
+
+  <div class="rule"><span>Terms</span></div>
+  <div class="terms">
+    <div><b>Minimum order</b>6 units, any mix of fragrances and discovery sets.</div>
+    <div><b>Payment</b>Prepaid in full before shipment. Card, ACH or wire.</div>
+    <div><b>Allocation</b>Each Immortal is limited to 250 numbered bottles. Up to 50 of each are offered to wholesale partners in total, first come, first served. Spirit of The People is an ongoing release with no cap.</div>
+    <div><b>Pricing policy</b>Retail price (MAP) applies to full 50 ml bottles sold to consumers. Decanting and sample sales are permitted.</div>
+    <div><b>Shipping</b>Ground only within the lower 48 states (flammable product, DOT limited quantity). Ships from Charlotte, North Carolina, at cost or on the buyer's carrier account.</div>
+    <div><b>Lead time</b>Launch orders ship December 2026. Reorders within 5 business days while allocation lasts.</div>
+    <div><b>Samples for buyers</b>One Immortal Discovery Set is included free with a first qualifying order.</div>
+    <div><b>Returns</b>All wholesale sales are final. Damage-in-transit claims honored within 7 days of delivery with photos.</div>
+  </div>
+
+  <footer class="footer">
+    <b>Contact</b><br>
+    Sam, Creative Director · support@eaudom.com · eaudom.com<br>
+    Eaudom LLC · 10850 Providence Rd #1365, Charlotte, NC 28277
+  </footer>
+</section>
+
+</body>
+</html>
